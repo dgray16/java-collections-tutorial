@@ -38,6 +38,21 @@ public class HashMapSample {
 
         Collection<Dog> values = hashMap.values();
 
+        hashMap.put(2, new Dog(2));
+
+        /* Regular for each */
+        for (Map.Entry<Integer, Dog> integerDogEntry : hashMap.entrySet()) {
+            integerDogEntry.setValue(new Dog(9));
+            break;
+        }
+
+        /* Java 8 Stream */
+        Map.Entry<Integer, Dog> integerDogEntry = hashMap.entrySet().stream()
+                .findFirst()
+                .orElseThrow(RuntimeException::new);
+
+        integerDogEntry.setValue(new Dog(10));
+
         /* Regular for each */
         for (Map.Entry<Integer, Dog> entry : hashMap.entrySet()) {
             System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
@@ -45,6 +60,11 @@ public class HashMapSample {
 
         /* Java 8 */
         hashMap.forEach((key, value) -> System.out.println("Key: " + key + " Value: " + value));
+
+        /* Demonstration of rehashing */
+        for (int i = 10; i < 20; i++) {
+            hashMap.put(i, new Dog(i));
+        }
 
         System.out.println("End");
     }

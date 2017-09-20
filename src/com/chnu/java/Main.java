@@ -2,6 +2,7 @@ package com.chnu.java;
 
 import com.chnu.java.collections.list.ArrayListSample;
 import com.chnu.java.collections.list.LinkedListSample;
+import com.chnu.java.collections.list.TreeMapSample;
 import com.chnu.java.collections.map.HashMapSample;
 import com.chnu.java.collections.map.LinkedHashMapSample;
 import com.chnu.java.collections.set.HashSetSample;
@@ -9,10 +10,8 @@ import com.chnu.java.collections.set.LinkedHashSetSample;
 import com.chnu.java.collections.set.TreeSetSample;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 public class Main {
 
@@ -34,6 +33,7 @@ public class Main {
 
         new HashMapSample().hashMap();
         new LinkedHashMapSample().linkedHashMap();
+        new TreeMapSample().treeMap();
 
         System.out.println("End");
     }
