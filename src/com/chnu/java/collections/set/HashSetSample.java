@@ -1,7 +1,7 @@
 package com.chnu.java.collections.set;
 
 
-import com.chnu.java.Dog;
+import com.chnu.java.collections.Dog;
 
 import java.util.HashSet;
 import java.util.Set;

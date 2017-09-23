@@ -1,8 +1,7 @@
 package com.chnu.java.collections.list;
 
-import com.chnu.java.Dog;
+import com.chnu.java.collections.Dog;
 
-import java.util.Map;
 import java.util.TreeMap;
 
 public class TreeMapSample {

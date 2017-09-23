@@ -1,4 +1,4 @@
-package com.chnu.java;
+package com.chnu.java.collections;
 
 public class Dog {
 
