@@ -1,6 +1,6 @@
 package com.chnu.java.collections.map;
 
-import com.chnu.java.collections.Dog;
+import com.chnu.java.Dog;
 
 import java.util.LinkedHashMap;
 

@@ -8,6 +8,8 @@ import com.chnu.java.collections.map.LinkedHashMapSample;
 import com.chnu.java.collections.set.HashSetSample;
 import com.chnu.java.collections.set.LinkedHashSetSample;
 import com.chnu.java.collections.set.TreeSetSample;
+import com.chnu.java.json.JsonExample;
+import com.chnu.java.recursion.TreeIterationExample;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -34,6 +36,9 @@ public class Main {
         new HashMapSample().hashMap();
         new LinkedHashMapSample().linkedHashMap();
         new TreeMapSample().treeMap();
+
+        new JsonExample().jsonExample();
+        new TreeIterationExample().treeIteration();
 
         System.out.println("End");
     }
